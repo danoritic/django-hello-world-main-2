@@ -1,7 +1,7 @@
 # example/views.py
 from datetime import datetime
 
-from django.http import HttpResponse
+from django.http import HttpResponse,JsonResponse
 
 def index(request):
     now = datetime.now()
@@ -13,4 +13,5 @@ def index(request):
         </body>
     </html>
     '''
-    return HttpResponse(html)
+    # return HttpResponse(html)
+    return JsonResponse({"data":"atad","special":"yoruba atata"})
