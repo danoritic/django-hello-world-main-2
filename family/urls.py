@@ -5,5 +5,5 @@ from family.views import family_view
 
 
 urlpatterns = [
-    path('/family', family_view),
+    path('family', family_view),
 ]
